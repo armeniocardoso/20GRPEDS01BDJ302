@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    <entry key="ContatoRepository.listar">
+        <![CDATA[
+            SELECT 
+                id, 
+                nome, 
+                email,
+                fone 
+            FROM contatos
+        ]]>
+    </entry>
+    <entry key="ContatoRepository.obter">
+        <![CDATA[
+            SELECT 
+                id, 
+                nome, 
+                email,
+                fone 
+            FROM contatos
+            WHERE id = ?
+        ]]>
+    </entry>
+    <entry key="ContatoRepository.inserir">
+        <![CDATA[
+            INSERT INTO contatos
+            (nome, email, fone) 
+            VALUES (?, ?, ?)
+        ]]>
+    </entry>
+    <entry key="ContatoRepository.alterar">
+        <![CDATA[
+            UPDATE contatos
+            SET nome  = ?,
+                email = ?,
+                fone  = ?
+            WHERE id = ?
+        ]]>
+    </entry>
+</properties>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+
+<struts-config>
+    <form-beans>
+        <form-bean name="ContatoPesquisaActionForm" type="br.com.infnet.web.contatos.ContatoActionForm"/>    
+        <form-bean name="ContatoActionForm" type="br.com.infnet.web.contatos.ContatoActionForm"/>    
+    </form-beans>
+    
+    <global-exceptions>
+    </global-exceptions>
+
+    <global-forwards>
+        <forward name="contatos.manter" path="/contatos/manter.jsp"/>
+        
+    </global-forwards>
+
+    <action-mappings>
+        <action path="/contatos/obterContato" type="br.com.infnet.web.contatos.ObterContatoAction"/>
+        <action input="/contatos/index.jsp" name="ContatoPesquisaActionForm" path="/contatos/pesquisar" scope="request" type="br.com.infnet.web.contatos.PesquisarContatosAction"/>
+    </action-mappings>
+    
+    <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
+
+    <message-resources parameter="br/com/infnet/web/ApplicationResource"/>    
+    
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />      
+        <set-property property="moduleAware" value="true" />
+    </plug-in>
+    
+    <!-- ========================= Validator plugin ================================= -->
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property
+            property="pathnames"
+            value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+    </plug-in>  
+</struts-config>
