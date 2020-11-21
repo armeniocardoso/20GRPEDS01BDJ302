@@ -5,10 +5,10 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 ![Logo do Infnet](imagens/logo.png)
-### ESTI - Escola Superior de Tecnologia da Informação
-
 # Desenvolvimento Web com Java EE
-## Turma de Engenharia de Software - 2020/2
+### ESTI - Escola Superior de Tecnologia da Informação
+### Bloco Desenvolvimento Java - Disciplina Regular 1
+### Turma de Engenharia de Software - 2020/2
 
 ## Conteúdo
 * Servlets.
