@@ -1,14 +1,14 @@
-[![Watchers][watchers-shield]][watchers-url]
-[![Forks][forks-shield]][forks-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 ![Logo do Infnet](imagens/logo.png)
 # Desenvolvimento Web com Java EE
 ### ESTI - Escola Superior de Tecnologia da Informação
 ### Bloco Desenvolvimento Java - Disciplina Regular 1
 ### Turma de Engenharia de Software - 2020/2
+
+[![Watchers][watchers-shield]][watchers-url]
+[![Forks][forks-shield]][forks-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 ## Conteúdo
 * Servlets.
